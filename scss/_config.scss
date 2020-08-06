@@ -5,7 +5,7 @@ $home-image: url(../img/denis-pavlovic-wl5AypUmamo-unsplash.jpg);
 $background-opacity: 0.9;
 
 @mixin easeOut {
-    transition: all 0.5 ease-out;
+    transition: all 0.5s ease-out;
 }
 
 @mixin background {
