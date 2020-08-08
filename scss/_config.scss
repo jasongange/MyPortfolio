@@ -1,7 +1,8 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #25274d;
+$secondary-color: #2e9cca;
 $show-home-image: true;
 $home-image: url(../img/denis-pavlovic-wl5AypUmamo-unsplash.jpg);
+$home-image2: url(../img/vipul-jha-a4X1cdC1QAc-unsplash.jpg);
 $background-opacity: 0.9;
 
 @mixin easeOut {
@@ -11,10 +12,16 @@ $background-opacity: 0.9;
 @mixin background {
     @if $show-home-image{
         &#bg-img{
+
             background: $home-image;
             background-attachment: fixed;
             background-size: cover;
-
+            transition: background-image 1s ease-in-out;
+            &:hover{
+                background: $home-image2;
+                background-attachment: fixed;
+                background-size: cover;
+            }
             &:after{
             content:'';
             position: absolute;

@@ -26,7 +26,131 @@ font-weight: 400;
 &.sm-heading{
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2),0.5);
+    // background: rgba(lighten($primary-color, 2),0.5);
+    @import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+&.cssload-loading {
+	// text-align:center;
+	// margin: 49px auto;
+	color: white;
+	font-size: 2em;
+	// font-family: "Montserrat", sans-serif;
+	animation: cssload-breathe 15.05s ease infinite;
+		-o-animation: cssload-breathe 15.05s ease infinite;
+		-ms-animation: cssload-breathe 15.05s ease infinite;
+		-webkit-animation: cssload-breathe 15.05s ease infinite;
+		-moz-animation: cssload-breathe 15.05s ease infinite;
+}
+
+@keyframes cssload-breathe {
+	0% {
+		letter-spacing: 0;
+		text-shadow: 0 0 1px white;
+	}
+	30% {
+		color: transparent;
+	}
+	50% {
+		letter-spacing: 97px;
+		font-size: 0;
+		text-shadow: 0 0 6px white;
+	}
+	60% {
+		color: transparent;
+	}
+	100% {
+		letter-spacing: 0;
+		text-shadow: 0 0 1px white;
+	}
+}
+
+@-o-keyframes cssload-breathe {
+	0% {
+		letter-spacing: 0;
+		text-shadow: 0 0 1px white;
+	}
+	30% {
+		color: transparent;
+	}
+	50% {
+		letter-spacing: 97px;
+		font-size: 0;
+		text-shadow: 0 0 6px white;
+	}
+	60% {
+		color: transparent;
+	}
+	100% {
+		letter-spacing: 0;
+		text-shadow: 0 0 1px white;
+	}
+}
+
+@-ms-keyframes cssload-breathe {
+	0% {
+		letter-spacing: 0;
+		text-shadow: 0 0 1px white;
+	}
+	30% {
+		color: transparent;
+	}
+	50% {
+		letter-spacing: 97px;
+		font-size: 0;
+		text-shadow: 0 0 6px white;
+	}
+	60% {
+		color: transparent;
+	}
+	100% {
+		letter-spacing: 0;
+		text-shadow: 0 0 1px white;
+	}
+}
+
+@-webkit-keyframes cssload-breathe {
+	0% {
+		letter-spacing: 0;
+		text-shadow: 0 0 1px white;
+	}
+	30% {
+		color: transparent;
+	}
+	50% {
+		letter-spacing: 97px;
+		font-size: 0;
+		text-shadow: 0 0 6px white;
+	}
+	60% {
+		color: transparent;
+	}
+	100% {
+		letter-spacing: 0;
+		text-shadow: 0 0 1px white;
+	}
+}
+
+@-moz-keyframes cssload-breathe {
+	0% {
+		letter-spacing: 0;
+		text-shadow: 0 0 1px white;
+	}
+	30% {
+		color: transparent;
+	}
+	50% {
+		letter-spacing: 97px;
+		font-size: 0;
+		text-shadow: 0 0 6px white;
+	}
+	60% {
+		color: transparent;
+	}
+	100% {
+		letter-spacing: 0;
+		text-shadow: 0 0 1px white;
+	}
+}
 }
 }
 

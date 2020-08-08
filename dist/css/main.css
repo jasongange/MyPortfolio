@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -40,14 +41,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #1d1e3c;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #25274d;
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -57,14 +58,14 @@
       height: 250px;
       background: url("../img/JasonGange.jpg");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #2e9cca; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #2e9cca; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +77,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #2e9cca; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -94,7 +95,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #25274d;
   color: white;
   height: 100%;
   margin: 0;
@@ -103,7 +104,12 @@ body {
   body#bg-img {
     background: url(../img/denis-pavlovic-wl5AypUmamo-unsplash.jpg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    transition: background-image 1s ease-in-out; }
+    body#bg-img:hover {
+      background: url(../img/vipul-jha-a4X1cdC1QAc-unsplash.jpg);
+      background-attachment: fixed;
+      background-size: cover; }
     body#bg-img:after {
       content: '';
       position: absolute;
@@ -112,7 +118,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background-color: rgba(68, 68, 68, 0.9); }
+      background-color: rgba(37, 39, 77, 0.9); }
 
 h1,
 h2,
@@ -127,8 +133,107 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    padding: 0.2rem 1rem; }
+    h1.sm-heading.cssload-loading,
+    h2.sm-heading.cssload-loading,
+    h3.sm-heading.cssload-loading {
+      color: white;
+      font-size: 2em;
+      animation: cssload-breathe 15.05s ease infinite;
+      -o-animation: cssload-breathe 15.05s ease infinite;
+      -ms-animation: cssload-breathe 15.05s ease infinite;
+      -webkit-animation: cssload-breathe 15.05s ease infinite;
+      -moz-animation: cssload-breathe 15.05s ease infinite; }
+
+@keyframes cssload-breathe {
+  0% {
+    letter-spacing: 0;
+    text-shadow: 0 0 1px white; }
+  30% {
+    color: transparent; }
+  50% {
+    letter-spacing: 97px;
+    font-size: 0;
+    text-shadow: 0 0 6px white; }
+  60% {
+    color: transparent; }
+  100% {
+    letter-spacing: 0;
+    text-shadow: 0 0 1px white; } }
+
+@-o-keyframes cssload-breathe {
+  0% {
+    letter-spacing: 0;
+    text-shadow: 0 0 1px white; }
+  30% {
+    color: transparent; }
+  50% {
+    letter-spacing: 97px;
+    font-size: 0;
+    text-shadow: 0 0 6px white; }
+  60% {
+    color: transparent; }
+  100% {
+    letter-spacing: 0;
+    text-shadow: 0 0 1px white; } }
+
+@-ms-keyframes cssload-breathe {
+  h1.sm-heading 0%,
+  h2.sm-heading 0%,
+  h3.sm-heading 0% {
+    letter-spacing: 0;
+    text-shadow: 0 0 1px white; }
+  h1.sm-heading 30%,
+  h2.sm-heading 30%,
+  h3.sm-heading 30% {
+    color: transparent; }
+  h1.sm-heading 50%,
+  h2.sm-heading 50%,
+  h3.sm-heading 50% {
+    letter-spacing: 97px;
+    font-size: 0;
+    text-shadow: 0 0 6px white; }
+  h1.sm-heading 60%,
+  h2.sm-heading 60%,
+  h3.sm-heading 60% {
+    color: transparent; }
+  h1.sm-heading 100%,
+  h2.sm-heading 100%,
+  h3.sm-heading 100% {
+    letter-spacing: 0;
+    text-shadow: 0 0 1px white; } }
+
+@-webkit-keyframes cssload-breathe {
+  0% {
+    letter-spacing: 0;
+    text-shadow: 0 0 1px white; }
+  30% {
+    color: transparent; }
+  50% {
+    letter-spacing: 97px;
+    font-size: 0;
+    text-shadow: 0 0 6px white; }
+  60% {
+    color: transparent; }
+  100% {
+    letter-spacing: 0;
+    text-shadow: 0 0 1px white; } }
+
+@-moz-keyframes cssload-breathe {
+  0% {
+    letter-spacing: 0;
+    text-shadow: 0 0 1px white; }
+  30% {
+    color: transparent; }
+  50% {
+    letter-spacing: 97px;
+    font-size: 0;
+    text-shadow: 0 0 6px white; }
+  60% {
+    color: transparent; }
+  100% {
+    letter-spacing: 0;
+    text-shadow: 0 0 1px white; } }
 
 a {
   color: #fff;
@@ -140,7 +245,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #2e9cca; }
 
 main {
   padding: 4rem;
@@ -150,9 +255,9 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a; }
+        color: #2e9cca; }
   main .fab fa-twitter:hover {
-    color: #eece1a;
+    color: #2e9cca;
     transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -168,7 +273,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #2e9cca 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -179,9 +284,9 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
+    background: #2d305e;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #2e9cca 5px solid; }
 
 .projects {
   display: grid;
@@ -192,7 +297,7 @@ main {
     border: 3px white solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #2e9cca;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -209,7 +314,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #2e9cca;
       color: black; }
       .boxes div:hover span {
         color: black; }
@@ -220,21 +325,21 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
-    color: set-text-coler(#eece1a); }
+    background: #2e9cca;
+    color: set-text-coler(#2e9cca); }
 
 .btn-dark {
   background: black;
   color: white; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #a0a2d1;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #14162b;
   color: white;
   height: 60px; }
 
