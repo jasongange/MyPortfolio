@@ -74,22 +74,35 @@
 
     //Branding Side
     &-branding{
-        background: $primary-color;
         @include easeOut;
         transform: translate3d(0, 100%, 0);
+
+        background: $branding-image;
+        background-attachment: fixed;
+        background-size: cover;
+        &:after{
+            content:'';
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: rgba(#25274d,0.6);
+            }
 
         &.show{
             //Slide in from bottom
             transform: translate3d(0, 0, 0);
         }
 
-        .portrait{
-            width: 250px;
-            height: 250px;
-            background: url('../img/JasonGange.jpg');
-            border-radius: 50%;
-            border: solid 3px $secondary-color;
-        }
+        // .portrait{
+        //     width: 250px;
+        //     height: 250px;
+        //     background: url('../img/JasonGange.jpg');
+        //     border-radius: 50%;
+        //     border: solid 5px $secondary-color;
+        // }
     }
     .nav-item{
         transform: translate3d(600px, 0, 0);

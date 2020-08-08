@@ -45,6 +45,8 @@
             background: url('../img/JasonGange_small.jpg');
             width: 150px;
             height: 150px;
+            border-radius: 50%;
+            border: solid 5px $secondary-color;
         }
     }
     .about-info{
