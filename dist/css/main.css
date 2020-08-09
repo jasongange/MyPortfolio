@@ -64,6 +64,13 @@
       background-color: rgba(37, 39, 77, 0.6); }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
+    .menu-branding .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/JasonGange.jpg");
+      border-radius: 50%;
+      border: solid 5px #2e9cca;
+      filter: drop-shadow(8px 8px 10px #03000e); }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -96,16 +103,118 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.image-area {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute; }
+
+.img-wrapper {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  overflow: hidden; }
+
+.img-wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 180%;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  transform: skew(45deg);
+  transition: .5s; }
+
+.img-wrapper:hover:before {
+  left: -180%; }
+
+.img-wrapper img {
+  height: 400px;
+  width: 300px;
+  filter: grayscale(100%);
+  transition: 2s; }
+
+.img-wrapper:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1); }
+
+.img-wrapper h3 {
+  background: #29648A;
+  font-family: Poppins;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: perspective(400px) rotateY(90deg);
+  transform-origin: right;
+  transition: 1s; }
+
+.img-wrapper:hover h3 {
+  transform: perspective(400px) rotateY(0deg); }
+
+.img-wrapper ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #29648A 255, 255, 255, 0; }
+
+.img-wrapper ul li {
+  background: #29648A;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  transform: perspective(800px) rotateY(90deg);
+  transition: .5s;
+  transform-origin: left; }
+
+.img-wrapper:hover ul li {
+  transform: perspective(800px) rotateY(0deg); }
+
+.img-wrapper:hover ul li:nth-child(1) {
+  transition-delay: .2s; }
+
+.img-wrapper:hover ul li:nth-child(2) {
+  transition-delay: .6s; }
+
+.img-wrapper:hover ul li:nth-child(3) {
+  transition-delay: .8s; }
+
+.img-wrapper:hover ul li:nth-child(4) {
+  transition-delay: 1s; }
+
+.img-wrapper ul li a {
+  color: #aaabb8;
+  background: rgba(255, 255, 255, 0); }
+
+.img-wrapper ul li i {
+  color: #aaabb8;
+  background: rgba(255, 255, 255, 0); }
+
+.img-wrapper ul li i:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0); }
+
 * {
   box-sizing: border-box; }
 
 body {
-  background: #25274d;
-  color: white;
-  height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+  background: #25274d;
+  line-height: 1.5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body#bg-img {
     background: url(../img/denis-pavlovic-wl5AypUmamo-unsplash.jpg);
     background-attachment: fixed;
@@ -124,6 +233,49 @@ body {
       height: 100%;
       z-index: -1;
       background-color: rgba(37, 39, 77, 0.8); }
+
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  background: #25274d;
+  display: flex;
+  justify-content: left;
+  align-items: left; }
+
+.particles-js-canvas-el {
+  position: absolute; }
+
+canvas {
+  display: block; }
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+
+.js-count-particles {
+  font-size: 1.1em; }
+
+#stats,
+.count-particles {
+  -webkit-user-select: none; }
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden; }
+
+.count-particles {
+  border-radius: 0 0 3px 3px; }
 
 h1,
 h2,
@@ -383,7 +535,14 @@ main {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: solid 5px #2e9cca; }
+      border: solid 5px #2e9cca;
+      margin-top: 20px;
+      margin-left: 30px; }
+    .menu-branding .img-wrapper {
+      width: 200px;
+      height: 180px; }
+    .menu-branding .img-wrapper h3 {
+      padding: 1px 0; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
