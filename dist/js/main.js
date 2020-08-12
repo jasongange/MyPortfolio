@@ -4,6 +4,10 @@ const menu =  document.querySelector('.menu');
 const menuNav =  document.querySelector('.menu-nav');
 const menuBranding =  document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
+const body = document.querySelector('body')
+const spinner = document.querySelector('.lds-spinner')
+
+
 
 //Set Initial State of Menu
 let showMenu = false;
@@ -32,3 +36,14 @@ function toggleMenu(){
 
     }
 }
+
+//Spinner on reload
+document.onreadystatechange = function() { 
+    if (document.readyState !== "complete") { 
+        body.style.visibility= "hidden"; 
+        spinner.style.visibility = "visible"; 
+    } else { 
+        spinner.style.display = "none"; 
+        body.style.visibility = "visible"; 
+    } 
+}; 
