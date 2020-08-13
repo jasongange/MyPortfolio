@@ -303,12 +303,14 @@ main{
       
       .flip-card-front {
         background-color: #00d7c3;
+        border-radius: 20px;
         // color: white;
         .bio-image{
             grid-area: bioimage;
             margin: auto;
-            border-radius: 20 10%;
+            // border-radius: 20 10%;
             border: #00d7c3 3px solid;
+            border-radius: 20px;
         }
       }
       
@@ -316,6 +318,7 @@ main{
         background-color: #2980b9;
         color: white;
         transform: rotateY(180deg);
+        border-radius: 20px;
       }
     
     .bio{
@@ -341,6 +344,12 @@ main{
         background: lighten($primary-color,5);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+        // border: white 2px solid;
+        border-radius: 20px;
+        border: 3px solid #00d7c3;
+        &:hover{
+          box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+      }
     }
 }
 
@@ -383,10 +392,12 @@ main{
         -webkit-transition: all .15s ease-in-out;
         transition: all .15s ease-in-out;
         color: white;
+        cursor: pointer;
+        
         &:hover{
           box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
           border: 3px solid #00d7c3;
-            padding: 0.5rem 1.5rem;
+          padding: 0.5rem 1.5rem;
             // background: $secondary-color;
             // color: set-text-color($secondary-color);
             // span{

@@ -5,6 +5,10 @@
     right: 35px;
     top: 35px;
     cursor: pointer;
+    &:hover{
+        box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    }
+    
     @include easeOut;
 
     .btn-line{
@@ -113,7 +117,7 @@
             transform: translate3d(0,0,0);
         }
         &.current > a{
-            color: $secondary-color;
+            color:#00d7c3;
         }
     }
     .nav-link{
@@ -128,7 +132,7 @@
         @include easeOut;
 
         &:hover{
-            color: $secondary-color;
+            color:#00d7c3;
         }
     }
 }
@@ -173,7 +177,7 @@
 
 .img-wrapper:hover:before
 {
-	left: -180%;
+    left: -180%;
 }
 
 .img-wrapper img
@@ -186,7 +190,7 @@
 .img-wrapper:hover img
 {
 	filter: grayscale(0%);
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .img-wrapper h3
@@ -208,7 +212,7 @@
 
 .img-wrapper:hover h3
 {
-	transform: perspective(400px) rotateY(0deg);
+    transform: perspective(400px) rotateY(0deg);
 }
 
 .img-wrapper ul
@@ -236,7 +240,7 @@
 
 .img-wrapper:hover ul li
 {
-	transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
 }
 
 .img-wrapper:hover ul li:nth-child(1)
@@ -267,12 +271,12 @@
 
 .img-wrapper ul li i
 {
-	color: #aaabb8;
+	color: #fff;
 	background: rgba(255,255,255,0);
 }
 
 .img-wrapper ul li i:hover
 {
-	color: #fff;
+	color: #00d7c3;
 	background: rgba(255,255,255,0);
 }
