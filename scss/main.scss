@@ -326,9 +326,15 @@ main{
     }
     .job-2{
         grid-area: job2;
+        .description{
+         text-align: left;
+        }
     }
     .job-3{
         grid-area: job3;
+        .description{
+          text-align: left;
+         }
     }
     .job{
         background: lighten($primary-color,5);
