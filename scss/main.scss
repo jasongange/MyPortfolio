@@ -15,7 +15,7 @@
 // }
 
 body{
-    @include background();
+    // @include background();
     margin:0;
     padding: 0;
     font-family: sans-serif;
@@ -56,24 +56,24 @@ canvas {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
   }
-  
+
   .js-count-particles{
     font-size: 1.1em;
   }
-  
+
   #stats,
   .count-particles{
     -webkit-user-select: none;
   }
-  
+
   #stats{
     border-radius: 3px 3px 0 0;
     overflow: hidden;
   }
-  
+
   .count-particles{
     border-radius: 0 0 3px 3px;
-}  
+}
 // Headings
 h1,
 h2,
@@ -238,10 +238,10 @@ main{
 
         a{
             padding: 0.4rem;
-            
+
             &:hover{
                 color: $secondary-color;
-               
+
             }
         }
     }
@@ -259,11 +259,11 @@ main{
 .about-info{
     display: grid;
     grid-gap: 30px;
-    grid-template-areas: 
+    grid-template-areas:
     'bioimage bio bio'
     'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
-    
+
     //sss
     .seperator{
         border: 2px solid white;
@@ -277,7 +277,7 @@ main{
         perspective: 1000px;
         cursor: pointer;
       }
-      
+
       .flip-card-inner {
         position: relative;
         width: 100%;
@@ -292,7 +292,7 @@ main{
         transform: rotateY(180deg);
         box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
       }
-      
+
       .flip-card-front, .flip-card-back {
         position: absolute;
         width: 100%;
@@ -300,7 +300,7 @@ main{
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
       }
-      
+
       .flip-card-front {
         background-color: #00d7c3;
         border-radius: 20px;
@@ -313,14 +313,14 @@ main{
             border-radius: 20px;
         }
       }
-      
+
       .flip-card-back {
         background-color: #2980b9;
         color: white;
         transform: rotateY(180deg);
         border-radius: 20px;
       }
-    
+
     .bio{
         grid-area: bio;
         font-size: 1.5rem;
@@ -378,7 +378,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1rem;
-    
+
     div{
         font-size: 2rem;
         // border: 3px white solid;
@@ -393,7 +393,7 @@ main{
         transition: all .15s ease-in-out;
         color: white;
         cursor: pointer;
-        
+
         &:hover{
           box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
           border: 3px solid #00d7c3;
