@@ -94,7 +94,9 @@
         }
         &#about{
             text-align: justify;
-            padding: 2rem;
+            text-justify: distribute;
+            // text-align-last: left;
+            padding: 1.3rem;
         }
         &#contact{
             padding: 4rem;

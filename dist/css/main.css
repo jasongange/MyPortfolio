@@ -273,9 +273,7 @@ h3 {
     font-size: 4rem; }
   h1.sm-heading,
   h2.sm-heading,
-  h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem; }
+  h3.sm-heading { }
     h1.sm-heading.cssload-loading,
     h2.sm-heading.cssload-loading,
     h3.sm-heading.cssload-loading {
@@ -469,7 +467,6 @@ main {
   .about-info .job {
     background: #2d305e;
     padding: 0.5rem;
-    border-bottom: #2e9cca 5px solid;
     border-radius: 20px;
     border: 3px solid #00d7c3; }
     .about-info .job:hover {
@@ -590,7 +587,8 @@ main {
     padding: 0rem; }
   main#about {
     text-align: justify;
-    padding: 2rem; }
+    text-justify: distribute;
+    padding: 1.3rem; }
   main#contact {
     padding: 4rem; }
   main #home h1,
@@ -629,7 +627,8 @@ main {
   width: 100%;
   height: 80px;
   left: 50%;
-  margin-left: -4em; }
+  margin-left: -3em;
+  z-index: -1; }
 
 .lds-spinner div {
   transform-origin: 40px 40px;

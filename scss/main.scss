@@ -92,8 +92,8 @@ font-weight: 400;
     font-size: 4rem;
 }
 &.sm-heading{
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    // margin-bottom: 2rem;
+    // padding: 0.2rem 1rem;
     // background: rgba(lighten($primary-color, 2),0.5);
     @import url(http://fonts.googleapis.com/css?family=Montserrat);
 
@@ -350,7 +350,7 @@ main{
     .job{
         background: lighten($primary-color,5);
         padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+        // border-bottom: $secondary-color 5px solid;
         // border: white 2px solid;
         border-radius: 20px;
         border: 3px solid #00d7c3;
@@ -455,7 +455,8 @@ main{
     width: 100%;
     height: 80px;
     left: 50%;
-    margin-left: -4em;
+    margin-left: -3em;
+    z-index: -1;
   }
   .lds-spinner div {
     transform-origin: 40px 40px;
