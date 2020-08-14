@@ -225,7 +225,7 @@ body {
   align-content: center; }
 
 .particles-js-canvas-el {
-  position: absolute; }
+  position: fixed; }
 
 canvas {
   display: block; }
