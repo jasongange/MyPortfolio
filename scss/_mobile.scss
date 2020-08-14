@@ -87,6 +87,19 @@
 }
 //SmartPhone
 @include mediaSm{
+    main {
+        &#home{
+            margin-top: 20vh;
+            padding: 0rem;
+        }
+        &#about{
+            text-align: justify;
+            padding: 2rem;
+        }
+        &#contact{
+            padding: 4rem;
+        }
+    }
     main 
      #home h1,
      #about h1, 
@@ -96,6 +109,7 @@
     }
     h1.lg-heading, h2.lg-heading, h3.lg-heading {
         font-size: 3.5rem;
+        text-align: center;
     }
     main #home h2{
         font-size: 32px;
@@ -116,17 +130,13 @@
             text-align: justify;
         }
         .menu-branding {
-            height: 40vh;
-        }
-        .menu-nav {
-            height: 80vh;
-            top: 50%;
+            height: 35vh;
         }
     }
     .about-info .bio {
         font-size: 1.2rem;
     }
     .menu .nav-link {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 }

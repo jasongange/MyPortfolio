@@ -21,7 +21,7 @@ body{
     font-family: sans-serif;
     color: set-text-color($primary-color);
     background: $primary-color;
-    line-height: 1.5;
+    // line-height: 1.5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #particles-js{
@@ -75,6 +75,13 @@ canvas {
     border-radius: 0 0 3px 3px;
 }
 // Headings
+main {
+  &#about{
+    .lg-heading{
+      text-align: center;
+    }
+  }
+}
 h1,
 h2,
 h3{
@@ -82,7 +89,7 @@ margin: 0;
 font-weight: 400;
 
 &.lg-heading{
-    font-size: 6rem;
+    font-size: 4rem;
 }
 &.sm-heading{
     margin-bottom: 2rem;
@@ -95,7 +102,7 @@ font-weight: 400;
 	// margin: 49px auto;
 	color: white;
 	font-size: 2em;
-	// font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	animation: cssload-breathe 15.05s ease infinite;
 		-o-animation: cssload-breathe 15.05s ease infinite;
 		-ms-animation: cssload-breathe 15.05s ease infinite;
@@ -323,7 +330,7 @@ main{
 
     .bio{
         grid-area: bio;
-        font-size: 1.5rem;
+        font-size: 20px;
     }
     .job-1{
         grid-area: job1;
