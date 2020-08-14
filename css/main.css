@@ -586,7 +586,7 @@ main {
     margin-top: 20vh;
     padding: 0rem; }
   main#about {
-    text-align: justify;
+    text-align: center;
     text-justify: distribute;
     padding: 1.3rem; }
   main#contact {
