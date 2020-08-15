@@ -89,8 +89,9 @@
 @include mediaSm{
     main {
         &#home{
-            margin-top: 20vh;
+            margin-top: 10vh;
             padding: 3rem;
+            overflow: hidden;
         }
         &#about{
             text-align: justify;

@@ -583,8 +583,9 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home {
-    margin-top: 20vh;
-    padding: 3rem; }
+    margin-top: 10vh;
+    padding: 3rem;
+    overflow: hidden; }
   main#about {
     text-align: justify;
     padding: 1.3rem; }
