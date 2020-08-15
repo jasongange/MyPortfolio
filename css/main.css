@@ -584,10 +584,9 @@ main {
 @media screen and (max-width: 500px) {
   main#home {
     margin-top: 20vh;
-    padding: 0rem; }
+    padding: 3rem; }
   main#about {
-    text-align: center;
-    text-justify: distribute;
+    text-align: justify;
     padding: 1.3rem; }
   main#contact {
     padding: 4rem; }
@@ -599,7 +598,7 @@ main {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center; }
   main #home h2 {
     font-size: 32px; }
@@ -611,8 +610,7 @@ main {
   .projects {
     grid-template-columns: 1fr; }
   .menu .nav-link {
-    font-size: 20px;
-    text-align: justify; }
+    font-size: 20px; }
   .menu .menu-branding {
     height: 35vh; }
   .about-info .bio {
