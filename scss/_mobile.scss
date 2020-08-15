@@ -90,13 +90,14 @@
     main {
         &#home{
             margin-top: 20vh;
-            padding: 0rem;
+            padding: 3rem;
         }
         &#about{
-            text-align: center;
-            text-justify: distribute;
+            text-align: justify;
+            // text-justify: distribute;
             // text-align-last: left;
             padding: 1.3rem;
+            
         }
         &#contact{
             padding: 4rem;
@@ -110,7 +111,7 @@
         font-size: 40px;
     }
     h1.lg-heading, h2.lg-heading, h3.lg-heading {
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-align: center;
     }
     main #home h2{
@@ -129,7 +130,6 @@
     .menu {
         .nav-link {
             font-size: 20px;
-            text-align: justify;
         }
         .menu-branding {
             height: 35vh;
