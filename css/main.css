@@ -295,12 +295,7 @@ h3 {
   50% {
     letter-spacing: 97px;
     font-size: 0;
-    text-shadow: 0 0 6px white; }
-  60% {
-    color: transparent; }
-  100% {
-    letter-spacing: 0;
-    text-shadow: 0 0 1px white; } }
+    text-shadow: 0 0 6px white; } }
 
 @-o-keyframes cssload-breathe {
   0% {
@@ -311,12 +306,7 @@ h3 {
   50% {
     letter-spacing: 97px;
     font-size: 0;
-    text-shadow: 0 0 6px white; }
-  60% {
-    color: transparent; }
-  100% {
-    letter-spacing: 0;
-    text-shadow: 0 0 1px white; } }
+    text-shadow: 0 0 6px white; } }
 
 @-ms-keyframes cssload-breathe {
   h1.sm-heading 0%,
@@ -333,16 +323,7 @@ h3 {
   h3.sm-heading 50% {
     letter-spacing: 97px;
     font-size: 0;
-    text-shadow: 0 0 6px white; }
-  h1.sm-heading 60%,
-  h2.sm-heading 60%,
-  h3.sm-heading 60% {
-    color: transparent; }
-  h1.sm-heading 100%,
-  h2.sm-heading 100%,
-  h3.sm-heading 100% {
-    letter-spacing: 0;
-    text-shadow: 0 0 1px white; } }
+    text-shadow: 0 0 6px white; } }
 
 @-webkit-keyframes cssload-breathe {
   0% {
@@ -353,12 +334,7 @@ h3 {
   50% {
     letter-spacing: 97px;
     font-size: 0;
-    text-shadow: 0 0 6px white; }
-  60% {
-    color: transparent; }
-  100% {
-    letter-spacing: 0;
-    text-shadow: 0 0 1px white; } }
+    text-shadow: 0 0 6px white; } }
 
 @-moz-keyframes cssload-breathe {
   0% {
@@ -369,12 +345,7 @@ h3 {
   50% {
     letter-spacing: 97px;
     font-size: 0;
-    text-shadow: 0 0 6px white; }
-  60% {
-    color: transparent; }
-  100% {
-    letter-spacing: 0;
-    text-shadow: 0 0 1px white; } }
+    text-shadow: 0 0 6px white; } }
 
 a {
   color: #fff;
@@ -408,7 +379,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .seperator {
     border: 2px solid white;
@@ -576,7 +547,7 @@ main {
     .menu-branding .img-wrapper h3 {
       padding: 1px 0; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
@@ -584,7 +555,7 @@ main {
 @media screen and (max-width: 500px) {
   main#home {
     margin-top: 10vh;
-    padding: 3rem;
+    padding: 2.5rem;
     overflow: hidden; }
   main#about {
     text-align: justify;
@@ -610,8 +581,6 @@ main {
     border: 2px solid white; }
   .projects {
     grid-template-columns: 1fr; }
-  .menu .nav-link {
-    font-size: 20px; }
   .menu .menu-branding {
     height: 35vh; }
   .about-info .bio {
