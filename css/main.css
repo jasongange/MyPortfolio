@@ -585,8 +585,10 @@ main {
     height: 35vh; }
   .about-info .bio {
     font-size: 1.2rem; }
-  .menu .nav-link {
-    margin-bottom: 30px; } }
+  /* .menu .nav-link {
+    margin-bottom: 30px; 
+  }  */
+}
 
 .lds-spinner {
   color: official;
